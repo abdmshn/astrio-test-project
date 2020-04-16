@@ -105,7 +105,25 @@ body {
 
 @media (max-width: 768px) {
     .products {
-        
+        display: block;
+        width: calc(100% - 20px);
+        padding: 10px;
+    }
+
+    .product {
+        width: calc(100% - 20px);
+        display: block;
+        margin: 0;
+    }
+
+    .product:hover .info {
+        width: calc(100% - 20px);
+    }
+
+    .product img {
+        width: auto;
+        display: flex;
+        margin: 0 auto;
     }
 }
 
