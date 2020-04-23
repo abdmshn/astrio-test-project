@@ -76,7 +76,9 @@ body {
     z-index: -1;
 }
 
-.product:hover {
+.product:hover,
+.product:active,
+.product:focus {
     border-color:#eb5c3e;
     background: #fff;
     -webkit-box-shadow: 0px 20px 20px 0px rgba(209,209,208,1);
@@ -84,15 +86,21 @@ body {
     box-shadow: 0px 20px 20px 0px rgba(209,209,208,1);
 }
 
-.product:hover .btn {
+.product:hover .btn,
+.product:active .btn,
+.product:focus .btn {
     background-color:#eb5c3e;
 }
 
-.product:hover .stars {
+.product:hover .stars,
+.product:active .stars,
+.product:focus .stars {
     color:#eb5c3e;
 }
 
-.product:hover .info {
+.product:hover .info,
+.product:active .info,
+.product:focus .info {
     display: block;
 }
 
@@ -107,6 +115,10 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        cursor: pointer;
+    }
+
     .container {
         display: block;
         width: calc(100% - 20px);
