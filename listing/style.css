@@ -76,9 +76,7 @@ body {
     z-index: -1;
 }
 
-.product:hover,
-.product:active,
-.product:focus {
+.product:hover {
     border-color:#eb5c3e;
     background: #fff;
     -webkit-box-shadow: 0px 20px 20px 0px rgba(209,209,208,1);
@@ -86,21 +84,15 @@ body {
     box-shadow: 0px 20px 20px 0px rgba(209,209,208,1);
 }
 
-.product:hover .btn,
-.product:active .btn,
-.product:focus .btn {
+.product:hover .btn {
     background-color:#eb5c3e;
 }
 
-.product:hover .stars,
-.product:active .stars,
-.product:focus .stars {
+.product:hover .stars {
     color:#eb5c3e;
 }
 
-.product:hover .info,
-.product:active .info,
-.product:focus .info {
+.product:hover .info {
     display: block;
 }
 
@@ -115,10 +107,6 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    body {
-        cursor: pointer;
-    }
-
     .container {
         display: block;
         width: calc(100% - 20px);
@@ -129,11 +117,21 @@ body {
         width: calc(50% - 30px);
         flex: none;
         margin-bottom: 80px;
+        text-align: center;
     }
 
     .product img {
         display: flex;
         margin: 0 auto;
+    }
+
+    .product .info {
+        text-align: left;
+    }
+
+    .btn {
+        float: none;
+        margin-left: 20px;
     }
 }
 
@@ -141,9 +139,5 @@ body {
     .product {
         display: block;
         width: calc(100% - 20px);
-    }
-
-    .product p {
-        text-align: center;
     }
 }
